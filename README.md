@@ -40,10 +40,9 @@
 ### **Repository Structure**
 ```
 .
-├── 
 ├── .gitignore
-├── 
-├── 
-├── 
-└── 
+├── FINAL.ipynb
+├── README.md
+├── data1.csv
+└── project3.pdf
 ```
