@@ -14,6 +14,7 @@ The Data we used was from the CDC's 2009 National H1N1 Flu Vaccine Survey of nea
 ### **Data Preparation**
 
 When we first looked at our data we noticed that 3 columns had more than half the total entries as null values. We decided it was safe to drop them from the set to maximize our number of observations for modeling. After pruning those 3 we split up our numerical and object columns into 2 different dataframes. Data was dummied for our objects and passed back in, then concatenated back with our numerical columns from before, creating an encoded dataframe to work with. After dropping our null values we were left with almost 23k observations, a majority of the original.
+
 ---
 
 ### **Modeling**
@@ -31,6 +32,7 @@ An updated confusion matrix confirms our model has a very low amount of false-po
 ![](img/rfc.png)
 
 In addition to our inferential RFC model, we also decided to run Logistic Regression and compare outcomes. We first created a list of the top 30 features from our original encoded dataframe and ran that through to see. We ended up with a precision score of only 70 for our logistic regression which isn't bad at all, but the random forest is clearly the superior model for the problem at hand.
+
 ---
 
 ### **Conclusion**
