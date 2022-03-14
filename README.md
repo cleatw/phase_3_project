@@ -50,6 +50,7 @@ For further research we intend to look at the impacts of whether or not the surv
 ### **Repository Structure**
 ```
 .
+├── /img
 ├── .gitignore
 ├── FINAL.ipynb
 ├── README.md
